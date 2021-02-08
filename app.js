@@ -33,7 +33,8 @@ const updateUI = meals => {
         });
     }
     else {
-        alert("This food is not find")
+        // alert("This food is not find")
+        sweetAlert("Oops....", "This food is not find", "error");
     }
 
 }
