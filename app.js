@@ -17,20 +17,20 @@ const updateUI = meals => {
     meals.meals.forEach(meals => {
         const mealDiv = document.createElement("div")
         const MealInfo = `
-        <div class="meal" onclick="displayMealDetail('${meals.idMeal}')">
-            <img src="${meals.strMealThumb}">
-            <h4>${meals.strMeal}</h4>
-        </div>
+                <div class="meal" onclick="displayMealDetail('${meals.idMeal}')">
+                    <img src="${meals.strMealThumb}">
+                    <h4>${meals.strMeal}</h4>
+                </div>
 
 
         `;
-        console.log("dfdsfdfdsf", mealDiv.innerHTML)
         mealDiv.innerHTML = MealInfo;
         div.appendChild(mealDiv)
 
-    });
 
+    });
 }
+
 
 getMealData();
 
@@ -44,7 +44,6 @@ const displayMealDetail = idMeal => {
 }
 
 const renderMealInfo = meals => {
-    console.log(meals.meals);
     const mealDiv = document.getElementById("mealDetail");
     mealDiv.innerHTML = `
     <div id="MealDetail">
