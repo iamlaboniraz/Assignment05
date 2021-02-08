@@ -14,6 +14,8 @@ const getMealData = meal => {
 
 const updateUI = meals => {
     const div = document.getElementById("meals");
+    
+    if (meals.meals != null) {
         meals.meals.forEach(meals => {
             const mealDiv = document.createElement("div")
             const MealInfo = `
@@ -29,11 +31,13 @@ const updateUI = meals => {
 
 
         });
-
+    }
+    else {
+        alert("This food is not find")
+    }
 
 }
 
-getMealData();
 
 
 
