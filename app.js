@@ -14,6 +14,7 @@ const getMealData = meal => {
 
 const updateUI = meals => {
     const div = document.getElementById("meals");
+    console.log(meals.meals.length)
         meals.meals.forEach(meals => {
             const mealDiv = document.createElement("div")
             const MealInfo = `
